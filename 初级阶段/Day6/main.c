@@ -2,7 +2,6 @@
 //    若一致，则该整型数是回文数，若不一致，则该整型数不是回文数。
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-
 int main()
 {
 	int start,end=0,temp;
@@ -16,7 +15,7 @@ int main()
 		start = start / 10;
 	}
 
-	if (temp == end)
+	if (start == end)
 	{
 		printf("yes");
 	}
