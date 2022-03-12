@@ -1,0 +1,6 @@
+﻿  main.cpp
+D:\1.督学营\6期\王道数据结构可运行代码\第二章\2.3 线性表的链式表示\main.cpp(15,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\1.督学营\6期\王道数据结构可运行代码\第二章\2.3 线性表的链式表示\main.cpp(22,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\1.督学营\6期\王道数据结构可运行代码\第二章\2.3 线性表的链式表示\main.cpp(33,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\1.督学营\6期\王道数据结构可运行代码\第二章\2.3 线性表的链式表示\main.cpp(39,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  2.3 线性表的链式表示.vcxproj -> D:\1.督学营\6期\王道数据结构可运行代码\第二章\Debug\2.3 线性表的链式表示.exe

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2.2 顺序表的增删查", "2.2 顺序表的增删查\2.2 顺序表的增删查.vcxproj", "{028DBB4A-EDBF-4604-97A2-96BECAA054A9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2.3 线性表的链式表示", "2.3 线性表的链式表示\2.3 线性表的链式表示.vcxproj", "{BD66B614-CCE1-45D0-A518-8B0751BFD348}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{028DBB4A-EDBF-4604-97A2-96BECAA054A9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{028DBB4A-EDBF-4604-97A2-96BECAA054A9}.Debug|Win32.Build.0 = Debug|Win32
+		{028DBB4A-EDBF-4604-97A2-96BECAA054A9}.Release|Win32.ActiveCfg = Release|Win32
+		{028DBB4A-EDBF-4604-97A2-96BECAA054A9}.Release|Win32.Build.0 = Release|Win32
+		{BD66B614-CCE1-45D0-A518-8B0751BFD348}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BD66B614-CCE1-45D0-A518-8B0751BFD348}.Debug|Win32.Build.0 = Debug|Win32
+		{BD66B614-CCE1-45D0-A518-8B0751BFD348}.Release|Win32.ActiveCfg = Release|Win32
+		{BD66B614-CCE1-45D0-A518-8B0751BFD348}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

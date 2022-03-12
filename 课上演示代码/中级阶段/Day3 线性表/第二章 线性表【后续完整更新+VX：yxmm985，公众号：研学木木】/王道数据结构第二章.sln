@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2.2 顺序表的增删查", "2.2 顺序表的增删查\2.2 顺序表的增删查.vcxproj", "{028DBB4A-EDBF-4604-97A2-96BECAA054A9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2.3 线性表的链式表示", "2.3 线性表的链式表示\2.3 线性表的链式表示.vcxproj", "{BD66B614-CCE1-45D0-A518-8B0751BFD348}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2.3.3 双向链表", "2.3.3 双向链表\2.3.3 双向链表.vcxproj", "{E5893531-F0DC-4B8D-A264-C55E1B6988B1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2.2-顺序表的增删查-自己写", "2.2-顺序表的增删查-自己写\2.2-顺序表的增删查-自己写.vcxproj", "{C65CCC85-5237-4D85-9356-C1DAA169DE34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{028DBB4A-EDBF-4604-97A2-96BECAA054A9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{028DBB4A-EDBF-4604-97A2-96BECAA054A9}.Debug|Win32.Build.0 = Debug|Win32
+		{028DBB4A-EDBF-4604-97A2-96BECAA054A9}.Debug|x64.ActiveCfg = Debug|Win32
+		{028DBB4A-EDBF-4604-97A2-96BECAA054A9}.Release|Win32.ActiveCfg = Release|Win32
+		{028DBB4A-EDBF-4604-97A2-96BECAA054A9}.Release|Win32.Build.0 = Release|Win32
+		{028DBB4A-EDBF-4604-97A2-96BECAA054A9}.Release|x64.ActiveCfg = Release|Win32
+		{BD66B614-CCE1-45D0-A518-8B0751BFD348}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BD66B614-CCE1-45D0-A518-8B0751BFD348}.Debug|Win32.Build.0 = Debug|Win32
+		{BD66B614-CCE1-45D0-A518-8B0751BFD348}.Debug|x64.ActiveCfg = Debug|Win32
+		{BD66B614-CCE1-45D0-A518-8B0751BFD348}.Release|Win32.ActiveCfg = Release|Win32
+		{BD66B614-CCE1-45D0-A518-8B0751BFD348}.Release|Win32.Build.0 = Release|Win32
+		{BD66B614-CCE1-45D0-A518-8B0751BFD348}.Release|x64.ActiveCfg = Release|Win32
+		{E5893531-F0DC-4B8D-A264-C55E1B6988B1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E5893531-F0DC-4B8D-A264-C55E1B6988B1}.Debug|Win32.Build.0 = Debug|Win32
+		{E5893531-F0DC-4B8D-A264-C55E1B6988B1}.Debug|x64.ActiveCfg = Debug|Win32
+		{E5893531-F0DC-4B8D-A264-C55E1B6988B1}.Release|Win32.ActiveCfg = Release|Win32
+		{E5893531-F0DC-4B8D-A264-C55E1B6988B1}.Release|Win32.Build.0 = Release|Win32
+		{E5893531-F0DC-4B8D-A264-C55E1B6988B1}.Release|x64.ActiveCfg = Release|Win32
+		{C65CCC85-5237-4D85-9356-C1DAA169DE34}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C65CCC85-5237-4D85-9356-C1DAA169DE34}.Debug|Win32.Build.0 = Debug|Win32
+		{C65CCC85-5237-4D85-9356-C1DAA169DE34}.Debug|x64.ActiveCfg = Debug|x64
+		{C65CCC85-5237-4D85-9356-C1DAA169DE34}.Debug|x64.Build.0 = Debug|x64
+		{C65CCC85-5237-4D85-9356-C1DAA169DE34}.Release|Win32.ActiveCfg = Release|Win32
+		{C65CCC85-5237-4D85-9356-C1DAA169DE34}.Release|Win32.Build.0 = Release|Win32
+		{C65CCC85-5237-4D85-9356-C1DAA169DE34}.Release|x64.ActiveCfg = Release|x64
+		{C65CCC85-5237-4D85-9356-C1DAA169DE34}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {908CB126-4990-43D3-9176-103A6557D5F0}
+	EndGlobalSection
+EndGlobal
