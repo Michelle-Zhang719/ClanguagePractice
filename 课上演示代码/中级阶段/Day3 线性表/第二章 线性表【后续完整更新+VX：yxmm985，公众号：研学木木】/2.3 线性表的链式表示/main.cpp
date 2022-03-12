@@ -45,7 +45,7 @@ LinkList CreatList2(LinkList &L)//list_tail_insert
 LNode *GetElem(LinkList L,int i)
 {
 	int j=1;
-	LNode *p=L->next;
+	LNode *p=L->next;//让p指向第一个节点
 	if(i==0)
 		return L;
 	if(i<1)
@@ -68,7 +68,7 @@ LNode *LocateElem(LinkList L,ElemType e)
 //新结点插入第i个位置
 bool ListFrontInsert(LinkList L,int i,ElemType e)
 {
-	LinkList p=GetElem(L,i-1);
+	LinkList p=GetElem(L,i-1);//拿到插入位置的前去地址值
 	if(NULL==p)
 	{
 		return false;
@@ -85,10 +85,14 @@ bool ListDelete(LinkList L,int i)
 	LinkList p=GetElem(L,i-1);
 	if(NULL==p)
 	{
-		return false;
+		return false;//要删除的位置不存在
 	}
 	LinkList q;
 	q=p->next;
+	if (NULL == q)
+	{
+		return false;
+	}
 	p->next=q->next;//断链
 	free(q);//释放对应结点的空间
 	return true;

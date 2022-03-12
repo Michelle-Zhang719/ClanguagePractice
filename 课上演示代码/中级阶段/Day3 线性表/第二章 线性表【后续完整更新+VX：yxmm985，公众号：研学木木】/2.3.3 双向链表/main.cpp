@@ -10,13 +10,13 @@ typedef struct DNode{
 DLinkList Dlist_head_insert(DLinkList &DL)
 {
 	DNode *s;int x;
-	DL=(DLinkList)malloc(sizeof(DNode));//带头结点的链表,不带头结点
-	DL->next=NULL;
+	DL=(DLinkList)malloc(sizeof(DNode));//带头结点的链表//为头节点申请空间
+	DL->next=NULL;//前驱指针和后继指针都填写为NULL
 	DL->prior=NULL;
 	scanf("%d",&x);//从标准输入读取数据
 	//3 4 5 6 7 9999
 	while(x!=9999){
-		s=(DLinkList)malloc(sizeof(DNode));//申请一个空间空间，强制类型转换
+		s=(DLinkList)malloc(sizeof(DNode));//申请一个空间空间，强制类型转换//为第一个至第n个节点申请空间
 		s->data=x;
 		s->next=DL->next;
 		if(DL->next!=NULL)//插入第一个结点时，不需要这一步操作
@@ -24,7 +24,7 @@ DLinkList Dlist_head_insert(DLinkList &DL)
 			DL->next->prior=s;
 		}
 		s->prior=DL;
-		DL->next=s;
+		DL->next=s;//具体图解可看王道数据结构书的P34页
 		scanf("%d",&x);//读取标准输入
 	}
 	return DL;
@@ -34,7 +34,7 @@ DLinkList Dlist_tail_insert(DLinkList &DL)
 {
 	int x;
 	DL=(DLinkList)malloc(sizeof(DNode));//带头节点的链表
-	DNode *s,*r=DL;
+	DNode *s,*r=DL;//r是尾指针
 	DL->prior=NULL;
 	//3 4 5 6 7 9999
 	scanf("%d",&x);
@@ -94,7 +94,7 @@ bool DListDelete(DLinkList DL,int i)
 	if(q==NULL)//删除的元素不存在
 		return false;
 	p->next=q->next;//断链
-	if(q->next!=NULL)
+	if(q->next!=NULL)//q->next为NULL删除的是最后一个节点
 	{
 		q->next->prior=p;
 	}
