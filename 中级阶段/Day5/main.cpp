@@ -82,7 +82,7 @@ void PrintList(LinkList L)
 
 void DeleteList(LinkList L, int i)
 {
-	//找到第i-1个节点，然后删除第i个节点
+	//找到第i-1个节点，然后删除第i个节点0
 	LNode* p = SerchList(L, i - 1);
 	LNode* s = p->next;//指针s指向要被删除的第i个节点
 	p->next = s->next;//断链

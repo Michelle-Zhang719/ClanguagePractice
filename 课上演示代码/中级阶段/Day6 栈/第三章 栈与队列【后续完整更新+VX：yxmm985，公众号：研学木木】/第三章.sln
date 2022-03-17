@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.1 栈", "3.1 栈\3.1 栈.vcxproj", "{0CCA1879-C8E4-4D43-9FED-0CEBF7A42E0C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.2 循环队列", "3.2 循环队列\3.2 循环队列.vcxproj", "{686D7382-8127-4DD4-925A-B2FC22B968FF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.2.3 队列的链式存储", "3.2.3 队列的链式存储\3.2.3 队列的链式存储.vcxproj", "{843792A8-EE58-4B9A-87E0-3B2E6C608AF7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.3.3 斐波那契数列", "3.3.3 斐波那契数列\3.3.3 斐波那契数列.vcxproj", "{8E4C89F2-5CAD-4FA3-8856-9D92528CCE4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CCA1879-C8E4-4D43-9FED-0CEBF7A42E0C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0CCA1879-C8E4-4D43-9FED-0CEBF7A42E0C}.Debug|Win32.Build.0 = Debug|Win32
+		{0CCA1879-C8E4-4D43-9FED-0CEBF7A42E0C}.Release|Win32.ActiveCfg = Release|Win32
+		{0CCA1879-C8E4-4D43-9FED-0CEBF7A42E0C}.Release|Win32.Build.0 = Release|Win32
+		{686D7382-8127-4DD4-925A-B2FC22B968FF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{686D7382-8127-4DD4-925A-B2FC22B968FF}.Debug|Win32.Build.0 = Debug|Win32
+		{686D7382-8127-4DD4-925A-B2FC22B968FF}.Release|Win32.ActiveCfg = Release|Win32
+		{686D7382-8127-4DD4-925A-B2FC22B968FF}.Release|Win32.Build.0 = Release|Win32
+		{843792A8-EE58-4B9A-87E0-3B2E6C608AF7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{843792A8-EE58-4B9A-87E0-3B2E6C608AF7}.Debug|Win32.Build.0 = Debug|Win32
+		{843792A8-EE58-4B9A-87E0-3B2E6C608AF7}.Release|Win32.ActiveCfg = Release|Win32
+		{843792A8-EE58-4B9A-87E0-3B2E6C608AF7}.Release|Win32.Build.0 = Release|Win32
+		{8E4C89F2-5CAD-4FA3-8856-9D92528CCE4D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8E4C89F2-5CAD-4FA3-8856-9D92528CCE4D}.Debug|Win32.Build.0 = Debug|Win32
+		{8E4C89F2-5CAD-4FA3-8856-9D92528CCE4D}.Release|Win32.ActiveCfg = Release|Win32
+		{8E4C89F2-5CAD-4FA3-8856-9D92528CCE4D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

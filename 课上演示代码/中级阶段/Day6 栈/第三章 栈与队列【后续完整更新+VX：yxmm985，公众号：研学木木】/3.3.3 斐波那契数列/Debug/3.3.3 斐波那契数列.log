@@ -1,0 +1,4 @@
+﻿  main.cpp
+D:\中级阶段\第三章 栈与队列\3.3.3 斐波那契数列\main.cpp(27,8): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\中级阶段\第三章 栈与队列\3.3.3 斐波那契数列\main.cpp(31,14): warning C4101: “a”: 未引用的局部变量
+  3.3.3 斐波那契数列.vcxproj -> D:\中级阶段\第三章 栈与队列\Debug\3.3.3 斐波那契数列.exe

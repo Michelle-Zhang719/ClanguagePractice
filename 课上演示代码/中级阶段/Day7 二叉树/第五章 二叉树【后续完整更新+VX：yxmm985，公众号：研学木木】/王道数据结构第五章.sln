@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4.3.1 二叉树的遍历", "4.3.1 二叉树的遍历\4.3.1 二叉树的遍历.vcxproj", "{A7C31AD2-27B2-45C7-9B4C-075CC3D1560D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4.3.2 线索二叉树", "4.3.2 线索二叉树\4.3.2 线索二叉树.vcxproj", "{18EA47F6-8AD4-4F75-8529-D2961ADE3343}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4.5 二叉排序树", "4.5 二叉排序树\4.5 二叉排序树.vcxproj", "{C200B610-2CC3-404C-A747-8BE94675FCBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7C31AD2-27B2-45C7-9B4C-075CC3D1560D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A7C31AD2-27B2-45C7-9B4C-075CC3D1560D}.Debug|Win32.Build.0 = Debug|Win32
+		{A7C31AD2-27B2-45C7-9B4C-075CC3D1560D}.Release|Win32.ActiveCfg = Release|Win32
+		{A7C31AD2-27B2-45C7-9B4C-075CC3D1560D}.Release|Win32.Build.0 = Release|Win32
+		{18EA47F6-8AD4-4F75-8529-D2961ADE3343}.Debug|Win32.ActiveCfg = Debug|Win32
+		{18EA47F6-8AD4-4F75-8529-D2961ADE3343}.Debug|Win32.Build.0 = Debug|Win32
+		{18EA47F6-8AD4-4F75-8529-D2961ADE3343}.Release|Win32.ActiveCfg = Release|Win32
+		{18EA47F6-8AD4-4F75-8529-D2961ADE3343}.Release|Win32.Build.0 = Release|Win32
+		{C200B610-2CC3-404C-A747-8BE94675FCBD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C200B610-2CC3-404C-A747-8BE94675FCBD}.Debug|Win32.Build.0 = Debug|Win32
+		{C200B610-2CC3-404C-A747-8BE94675FCBD}.Release|Win32.ActiveCfg = Release|Win32
+		{C200B610-2CC3-404C-A747-8BE94675FCBD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
