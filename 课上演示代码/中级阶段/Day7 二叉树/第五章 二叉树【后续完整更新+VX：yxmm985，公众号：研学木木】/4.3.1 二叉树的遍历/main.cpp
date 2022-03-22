@@ -72,7 +72,7 @@ int main()
 	int i,j,pos;
 	char c;
 	BiTree tree=NULL;//树根
-	ptag_t phead=NULL,ptail=NULL,listpnew,pcur;//phead就是队列头，ptail就是队列尾
+	ptag_t phead=NULL,ptail=NULL,listpnew = NULL,pcur = NULL;//phead就是队列头，ptail就是队列尾
 	//abcdefghij
 	while(scanf("%c",&c)!=EOF)
 	{

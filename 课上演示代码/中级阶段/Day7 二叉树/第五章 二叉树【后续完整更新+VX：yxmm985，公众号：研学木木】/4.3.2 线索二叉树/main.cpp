@@ -28,13 +28,13 @@ void BulidThreadTree(ThreadTree &T)
 void InThread(ThreadTree &p,ThreadTree &pre)
 {
 	if(p!=NULL){
-		InThread(p->lchild,pre);
+		InThread(p->lchild,pre);//递归找树的左孩子
 		if(p->lchild==NULL){//左边为NULL
 			p->lchild=pre;
 			p->ltag=1;
 		}
 		if(pre!=NULL&&pre->rchild==NULL){
-			//pre节点右孩子为NULL，就让其指向后继节点
+			//pre节点右孩子为NULL，就让其指向后继节点，而后继节点是p
 			pre->rchild=p;
 			pre->rtag=1;
 		}
@@ -47,7 +47,7 @@ void CreateInThread(ThreadTree T)
 	ThreadTree pre=NULL;
 	if(T!=NULL){
 		InThread(T,pre);
-		pre->rchild=NULL;
+		pre->rchild=NULL;9
 		pre->rtag=1;
 	}
 }
