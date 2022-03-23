@@ -19,4 +19,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="层次遍历问题.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="层次遍历问题解决.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

@@ -31,7 +31,7 @@ void Creat_BST(BiTree &T,KeyType str[],int n)
 	int i=0;
 	while(i<n)
 	{
-		BST_Insert(T,str[i]);
+		BST_Insert(T,str[i]);//把一个节点放入二叉查找树中
 		i++;
 	}
 }
@@ -90,7 +90,7 @@ void InOrder(BiTree T)
 //二叉排序树的创建，中序遍历，查找，删除
 int main()
 {
-	BiTree T;
+	BiTree T=NULL;//树根
 	BiTree parent;//存储父亲结点的地址值
 	BiTree search;
 	KeyType str[]={54,20,66,40,28,79,58};//将要进入二叉排序树的元素值

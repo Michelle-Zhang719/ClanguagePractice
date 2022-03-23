@@ -1,0 +1,162 @@
+//将辅助队列中数据域的存储元素换成BiTree即可
+
+//读取字符串abcdefghij，然后层次建树建立一颗二叉树，然后中序遍历输出 hdibjeafcg，后序遍历输出 hidjebfgca，层序遍历输出abcdefghij，注意不要输出汉字
+
+#define _CRT_SECURE_NO_WARNINGS
+#define MaxSize 20
+#include<stdio.h>
+#include<stdlib.h>
+
+//树的结构体定义
+typedef char ElemType;
+typedef struct BiNode
+{
+	ElemType data;//数据域
+	struct BiNode* lchild;//左指针
+	struct BiNode* rchild;//右指针
+}BiNode, * BiTree;//树的节点-结构体类型//树-结构体指针类型！
+
+//队的结构体定义（用以辅助建树，左右孩子都有的节点，出队）
+typedef struct label
+{
+	BiTree p;//用来存树节点的地址
+	struct label* pnext;
+}label, * Label;//队的节点，队
+
+//用以辅助层次遍历的队的结构体
+typedef BiTree TreeElemType;
+typedef struct Queue
+{
+	TreeElemType Qdata[MaxSize];//数据域
+	int front;//队头
+	int rear;//队尾
+}Queue;//队的节点，队
+void InitQueue(Queue& Q)
+{
+	Q.front = Q.rear = 0;
+}
+bool EnQueue(Queue& Q, BiTree tree)
+{
+	Q.Qdata[Q.rear] = tree;
+	Q.rear++;
+	return true;
+}
+bool IsEmpty(Queue Q)
+{
+	if (Q.front == Q.rear) 
+	{ 
+		return true;
+	}
+	else 
+	{
+		return false;
+	}
+}
+bool DeQueue(Queue& Q, BiTree& p)
+{
+	p = Q.Qdata[Q.front]; 
+	Q.front++; 
+	return true;
+}
+
+void midOrder(BiTree tree)
+{
+	if (tree != NULL)
+	{
+		midOrder(tree->lchild);
+		putchar(tree->data);
+		midOrder(tree->rchild);
+	}
+}
+
+void latOrder(BiTree tree)
+{
+	if (tree != NULL)
+	{
+		latOrder(tree->lchild);
+		latOrder(tree->rchild);
+		putchar(tree->data);
+	}
+}
+
+//层次遍历需要借助辅助队列
+void levelOrder(BiTree tree)
+{
+	BiTree p;//用来接收出队元素
+	Queue Q;//创建辅助队列
+	InitQueue(Q);//初始化队列
+
+	EnQueue(Q, tree);//根节点进队
+	//队列不为空时
+	while (!IsEmpty(Q))
+	{
+		DeQueue(Q, p);
+		putchar(p->data);
+		if (NULL != p->lchild)
+		{
+			EnQueue(Q, p->lchild);
+		}
+		if (NULL != p->rchild)
+		{
+			EnQueue(Q, p->rchild);
+		}
+	}
+}
+
+int main()
+{
+	BiTree tree = NULL;//根节点为空
+	BiTree newTreeNode;//树的新节点
+
+	Label listfront = NULL, listtail = NULL;//辅助队列头尾指针；
+	Label newListNode = NULL;//辅助队列新节点
+	Label curListNode = NULL;//当前被插入的节点
+
+	ElemType c;
+	while (scanf("%c", &c) != EOF)
+	{
+		//加结束条件！！！！
+		if (c == '\n')
+		{
+			break;
+		}
+		//初始化树和辅助链队
+		newTreeNode = (BiTree)calloc(1, sizeof(BiNode));//为树的新节点申请空间
+		newTreeNode->data = c;//给新节点赋值
+
+		newListNode = (Label)calloc(1, sizeof(label));//为辅助链队的新节点申请空间
+		newListNode->p = newTreeNode;//存入新节点的地址
+
+		if (NULL == tree)//根节点为空
+		{
+			tree = newTreeNode;//建立第一个根节点
+			listfront = newListNode;
+			listtail = newListNode;
+			curListNode = newListNode;
+			continue;
+		}
+		else//有根节点，读取到第二个以后的节点，辅助链队需要入队
+		{
+			listtail->pnext = newListNode;
+			listtail = newListNode;
+		}
+
+		//当前节点的左孩子为空时
+		if (NULL == curListNode->p->lchild)
+		{
+			curListNode->p->lchild = newTreeNode;//新节点入左树
+		}
+		else if (NULL == curListNode->p->rchild)
+		{
+			curListNode->p->rchild = newTreeNode;//新节点入右树
+			//出队
+			curListNode = curListNode->pnext;
+		}
+	}
+	midOrder(tree);//中序遍历
+	printf("\n");
+	latOrder(tree);//后续遍历
+	printf("\n");
+	levelOrder(tree);//层次遍历
+	//其基本思想：根节点入队，出队，左右孩子若有，则进队；出队....
+}

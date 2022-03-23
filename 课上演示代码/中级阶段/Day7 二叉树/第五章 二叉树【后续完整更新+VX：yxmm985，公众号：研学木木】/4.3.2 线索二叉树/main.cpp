@@ -47,7 +47,7 @@ void CreateInThread(ThreadTree T)
 	ThreadTree pre=NULL;
 	if(T!=NULL){
 		InThread(T,pre);
-		pre->rchild=NULL;9
+		pre->rchild=NULL;
 		pre->rtag=1;
 	}
 }
