@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\中级阶段\第八章 排序\7.3 交换排序\main.cpp(16,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  7.3 交换排序.vcxproj -> D:\中级阶段\第八章 排序\Debug\8.3 交换排序.exe

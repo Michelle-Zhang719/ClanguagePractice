@@ -1,0 +1,5 @@
+﻿  main.cpp
+D:\中级阶段\第七章 查找\6.2 顺序查找与折半查找\main.cpp(23,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+D:\中级阶段\第七章 查找\6.2 顺序查找与折半查找\main.cpp(68,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\中级阶段\第七章 查找\6.2 顺序查找与折半查找\main.cpp(79,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  6.2 顺序查找与折半查找.vcxproj -> D:\中级阶段\第七章 查找\Debug\7.2 顺序查找与折半查找.exe

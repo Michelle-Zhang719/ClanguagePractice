@@ -1,0 +1,7 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(519,5): warning MSB8028: 中间目录(Debug\)包含从另一个项目(6.5 字符串模式匹配.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  main.cpp
+D:\中级阶段\第七章 查找\6.5 字符串模式匹配\main.cpp(71,32): warning C4267: “=”: 从“size_t”转换到“char”，可能丢失数据
+D:\中级阶段\第七章 查找\6.5 字符串模式匹配\main.cpp(73,25): warning C4267: “=”: 从“size_t”转换到“char”，可能丢失数据
+D:\中级阶段\第七章 查找\6.5 字符串模式匹配\main.cpp(72,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\中级阶段\第七章 查找\6.5 字符串模式匹配\main.cpp(74,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  6.5 字符串模式匹配.vcxproj -> D:\中级阶段\第七章 查找\Debug\4.2 字符串模式匹配-KMP.exe
