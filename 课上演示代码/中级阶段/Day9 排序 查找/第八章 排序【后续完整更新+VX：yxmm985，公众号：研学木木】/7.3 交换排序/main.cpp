@@ -13,7 +13,7 @@ void ST_Init(SSTable &ST,int len)
 	ST.TableLen=len;
 	ST.elem=(ElemType *)malloc(sizeof(ElemType)*ST.TableLen);
 	int i;
-	srand(time(NULL));
+	srand(time(NULL));//随机数生成
 	for(i=0;i<ST.TableLen;i++)
 	{
 		ST.elem[i]=rand()%100;
@@ -104,7 +104,7 @@ int main()
 	SSTable ST;
 	ElemType A[10]={ 64, 94, 95, 79, 69, 84, 18, 22, 12 ,78};
 	ST_Init(ST,10);//初始化
-	memcpy(ST.elem,A,sizeof(A));
+	memcpy(ST.elem,A,sizeof(A));//内存copy接口，当copy整形数组或者浮点型数组时，要用memcpy
 	ST_print(ST);
 	//BubbleSort(ST.elem,10);
 	QuickSort(ST.elem,0,9);
