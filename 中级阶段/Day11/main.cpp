@@ -66,13 +66,35 @@ int change(int kuai[], int left, int right)
 	return k;
 }
 
+// 64 94 95 79 69 84 18 22 12 78
+//比64小的放在左边，比64大的放在右边
+int Partition(int A[],int low,int high)
+{
+	int pivot=A[low];//把最左边的值暂存，定为标准值，此时多出最左边的一个坑
+	while(low<high)
+	{
+		while (low < high && A[high] >= pivot)//从右往前找，找到一个比标准值小的值
+		{
+			--high;
+		}	
+		A[low]=A[high];//将此值放到左坑位
+		while (low < high && A[low] <= pivot)//从左往前后，找到一个比标准值大的值
+		{
+			++low;
+		}
+		A[high]=A[low];//将大的值填坑
+	}
+	A[low]=pivot;//将暂存值放入本属于它的坑位，且左边都小于它，右边都大于它
+	return low;
+}
 //快速排序
 void QuickSort(int kuai[], int low, int high)
 {
 	int pos;
 	if (low < high)
 	{
-		pos = change(kuai, low, high);
+		pos = change(kuai, low, high);//代码好写
+		//pos = Partition(kuai, low, high);//王道书上的写法
 		QuickSort(kuai, pos+1, high);//后半部分排序
 		QuickSort(kuai, low, pos-1);//前半部分排序
 	}
@@ -111,12 +133,9 @@ int main()
 		scanf("%d", &data[i]);
 	}
 
-
+	//用作其它排序的元素
 	memcpy(kuai, data, sizeof(data));
-	for (i = 9; i > -1; i--)
-	{
-		elem[i + 1] = data[i];//elem[10]=data[9],elem[1]=data[0]
-	}
+	memcpy(elem + 1, data, sizeof(data));
 	elem[0] = 0;//作为哨兵
 
 	//冒泡排序
