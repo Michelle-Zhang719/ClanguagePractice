@@ -22,28 +22,31 @@ void Merge(ElemType A[],int low,int mid,int high)
 	while(j<=high)
 		A[k++]=B[j++];
 }
+void print(int* a)
+{
+	for (int i = 0; i < N; i++)
+	{
+		printf("%3d", a[i]);
+	}
+	printf("\n");
+}
 //归并排序不限制是两两归并，还是多个归并
 // 1 3 5 7 9
 // 2 4
 // 1 2 3 4 5 7 9  主要的代码逻辑
 void MergeSort(ElemType A[],int low,int high)//递归分割
 {
-	if(low<high)
+	if(low<high)//只有两个元素0，1的时候，直接归并
 	{
 		int mid=(low+high)/2;
 		MergeSort(A,low,mid);
+		print(A);
 		MergeSort(A,mid+1,high);
+		print(A);
 		Merge(A,low,mid,high);
 	}
 }
-void print(int* a)
-{
-	for(int i=0;i<N;i++)
-	{
-		printf("%3d",a[i]);
-	}
-	printf("\n");
-}
+
 //《王道C督学营》课程
 // 归并排序
 int main()
